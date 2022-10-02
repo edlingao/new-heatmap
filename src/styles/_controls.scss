@@ -51,7 +51,14 @@
     align-items: flex-start;
     padding: 1rem;
 
-    
+    .tech-container {
+      width: 100%;
+      h3 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
     label {
       display: flex;
       justify-content: flex-start;

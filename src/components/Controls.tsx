@@ -1,37 +1,36 @@
 import { For, createSignal } from 'solid-js';
 import { dataStore, setData } from "../data";
 import { selectDatalayer } from '../lib/select-data-layer';
+import { Tecnicos } from '../types/dataset';
+import { CESAVEP } from '../data/cesavep';
+import { EAT } from '../data/eat';
+import { integracion } from '../data/integracion';
 
 export function Controls() {
-  const inputItems = [
-    'Abejas',
-    'Aves',
-    'Bovinos',
-    'Caprinos',
-    'Ovinos',
-    'Conejos',
-    'Porcinos',
-    'Aves y Porcinos',
-    'Caprinos y Abejas',
-    'Bovinos, Caprinos y Ovinos',
-    'Bovinos, Caprinos, Porcinos y Equinos',
-    'Cafe',
-    'Miel',
-    'Cafe y Miel',
-    'Frijol',
-    'Maiz',
-    'Maiz y Frijol',
+  const inputItems: Tecnicos[] = [
+    {
+      title: 'CESAVEP',
+      items: CESAVEP,
+    },
+    {
+      title: 'EAT',
+      items: EAT,
+    },
+    {
+      title: 'INTEGRACIÓN CFSAEP',
+      items: integracion,
+    }
   ]
   const [show, setShow] = createSignal(true)
-  const handleChange = (e: MouseEvent) => {
-    const selectedLayer = selectDatalayer(e.target.name);
+  const handleChange = ({items, color, checked, title}: {items: string[], color: string, checked: boolean, title: string}) => {
+    const selectedLayer = selectDatalayer(items, color, title);
 
-    const newSelectedData = e.target.checked
+    const newSelectedData = checked
       ? [...dataStore.layers, ...selectedLayer]
       : dataStore
         .layers
         .filter(
-          item => item.src !== selectedLayer[0].src
+          item => item.title !== title
         );
     setData('layers', newSelectedData);
   }
@@ -43,12 +42,22 @@ export function Controls() {
         <h1>Tecnicos</h1>
       </div>
       <form>
-        <For each={inputItems}>{(name) => 
-          <label>
-            <input type="checkbox" name={name} onChange={handleChange}/>
-            <div class="circle" style={{background: selectDatalayer(name)[0].color}}></div>
-            {name}
-          </label>
+        <For each={inputItems}>{({title, items}) =>
+          <div class="tech-container">
+            <h3>{title}</h3>
+            <For each={Object.keys(items)}>{(itemName => 
+              <label>
+                <input type="checkbox" name={itemName} onChange={(e) => handleChange({
+                  items: items[itemName].items,
+                  color: items[itemName].color,
+                  checked: e.target.checked,
+                  title: `${itemName}-${title}`,
+                })}/>
+                <div class="circle" style={{background: items[itemName].color}}></div>
+                {itemName.toUpperCase()}
+              </label>
+            )}</For>
+          </div>
         }</For>
       </form>
     </div>
