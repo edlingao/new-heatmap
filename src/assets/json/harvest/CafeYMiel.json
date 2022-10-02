@@ -1,0 +1,252 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CHICONCUAUTLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.959581,
+          20.093313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "NAUPAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.08025,
+          20.280689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "TLAOLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.94724,
+          20.14057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "TLACUILOTEPEC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.986287,
+          20.366919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "PAHUATLAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.141776,
+          20.293112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "PANTEPEC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.875166,
+          20.548449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "JALPAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.94297,
+          20.4793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "XICOTEPEC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.902589,
+          20.329899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "JOPALA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.77958,
+          20.214518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ZIHUATEUTLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.88772,
+          20.25074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "IXTEPEC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.646696,
+          20.039501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "JONOTLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.565121,
+          20.045704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "HUEHUETLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.62547,
+          20.104115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "TUZAMAPAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.575352,
+          20.066373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "XOCHITLAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.777265,
+          18.702222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "CUAUTEMPAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.792755,
+          19.912948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ZONGOZOTLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.740997,
+          19.970155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "HUITZILAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.696212,
+          19.974811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "ZAPOTITLAN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.513143,
+          18.291631
+        ]
+      }
+    }
+  ]
+}
