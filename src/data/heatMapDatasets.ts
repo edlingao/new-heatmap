@@ -147,12 +147,12 @@ export const Cafe: Layer[] = [
   {
     type: LayerType.Heatmap,
     color: '#361e1a',
-    src: '/src/assets/json/harvest/Porcinos.json',
+    src: '/src/assets/json/harvest/Cafe.json',
   },
   {
     type: LayerType.Circle,
     color: '#361e1a',
-    src: '/src/assets/json/harvest/Porcinos.json',
+    src: '/src/assets/json/harvest/Cafe.json',
   },
 ]
 

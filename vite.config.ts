@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [solidPlugin(), viteStaticCopy({
     targets: [
       {
-        src: path.resolve(__dirname, './src/assets/json') + '/[!.]*', // 1️⃣
-        dest: './src/assets/json', // 2️⃣
+        src: path.resolve(__dirname, './src/assets/json') + '/[!.]*',
+        dest: './src/assets/json',
       },
     ],
   }),],
