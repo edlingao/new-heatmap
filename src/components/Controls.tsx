@@ -9,15 +9,15 @@ import { integracion } from '../data/integracion';
 export function Controls() {
   const inputItems: Tecnicos[] = [
     {
-      title: 'CESAVEP',
+      title: 'Integración SDR',
       items: CESAVEP,
     },
     {
-      title: 'EAT',
+      title: 'Integración Estrategia acompañamiento Técnico (EAT)',
       items: EAT,
     },
     {
-      title: 'INTEGRACIÓN CFSAEP',
+      title: 'Integración CFSAEP',
       items: integracion,
     }
   ]
